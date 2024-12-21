@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CalcActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:layout_marginTop="40dp"
+        android:text="Calculator"
+        android:textColor="@color/red"
+        android:layout_marginStart="130dp">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="100dp"
+        android:hint="Enter NUmber 1"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="100dp"
+        android:hint="Enter NUmber 2"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="50dp">
+
+
+        <Button
+            android:id="@+id/btnsum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="+"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_marginStart="50dp"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="50dp">
+
+
+        <Button
+            android:id="@+id/btnmul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="*"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <Button
+            android:id="@+id/btndev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginStart="50dp"
+            tools:layout_editor_absoluteX="243dp"
+            tools:layout_editor_absoluteY="325dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Answer is "
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="587dp" />
+</LinearLayout>
